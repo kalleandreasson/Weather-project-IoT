@@ -52,7 +52,7 @@ def main():
                  last_publish = time.time()
                  print("Sent stuff...")
                  if(int(sensor.temperature) >= 18):
-                      print("Temperature reached 18°C!")
+                      print("Temperature reached 25°C!")
                       mqttClient.publish(Threshhold_topic, str("thresh hold has been reached 18 degrees").encode())
                  time.sleep(1)
 
