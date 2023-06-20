@@ -5,7 +5,6 @@ import time
 import ubinascii
 from simple import MQTTClient
 import machine
-import random
 from variables import Adafruit_username
 from variables import Adafruit_password
 
@@ -53,7 +52,7 @@ def main():
                  print("Sent stuff...")
                  if(int(sensor.temperature) >= 18):
                       print("Temperature reached 25°C!")
-                      mqttClient.publish(Threshhold_topic, str("thresh hold has been reached 18 degrees").encode())
+                      mqttClient.publish(Threshhold_topic, str("thresh hold has been reached 25 degrees").encode())
                  time.sleep(1)
 
 if __name__ == "__main__":
