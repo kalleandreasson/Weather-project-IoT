@@ -17,3 +17,7 @@ I chose this project because I already had some of the hardware at home and the 
 The raspberry is the mind of the whole setup, it's a micro computer. The raspberry is where you write your code, my code is written in micro python. The breadboard is used to easier connect the hardware to each other with pin holes that you connect the jumper cables to. Pin strip is used to install the raspberry on the breadboard and last the sensor is used to meassure the temperature and humidity and is connected to the raspberry with jumper cables. 
 
 I chose Visual studio code (VSC) as my IDE, I tried thonny but it was not as good as VSC. The code is uploaded to this repository and to my raspberry. I used the extension pico-w-go to upload code to my raspberry and configure the project. In the pico-w-go extension there is an option to upload the code if your raspberry is connected to your PC. If the raspberry is connected and VSC does not notice it you can chose the connect option and then it should reconnect and Visual studio code should be able to see that its connected. You have to download the corresponding UF2 file. If you hold down the boot button on your raspberry and open the provided index file you can see a bunch of UF2 files that are free to download. For my project i also had to download the dht.py and simple.py files. Feel free to downlaod them directly from my repository if you are planning on doing something similar to my project
+
+
+Pretend that the Raspberry is a pi pico w and the sensor is a DHT11 sensor
+![IoT diagram](./Image/circuit-diagram.PNG)
