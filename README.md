@@ -12,4 +12,4 @@ I chose this project because I already had some of the hardware at home and the 
 | Standard breadboard used to connect the hardware, costs 62SEK  | [Breadboard](https://www.electrokit.com/produkt/kopplingsdack-840-anslutningar/) |
 | Basic jumper cabmles with male pins, costs 50SEK  | [Jumper cables](https://www.electrokit.com/produkt/labbsladd-40-pin-30cm-hane-hane/) |
 | Pin strip, costs 10SEK  | [Pin strip](https://www.electrokit.com/produkt/stiftlist-2-54mm-1x40p-brytbar/) |
-| DHT11 sensor used to meassure temperature and humidity  | [DHT11 sensor](https://www.amazon.se/gp/product/B089W8DB5P/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1) |
+| DHT11 sensor used to meassure temperature and humidity, costs 63SEK  | [DHT11 sensor](https://www.amazon.se/gp/product/B089W8DB5P/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1) |
