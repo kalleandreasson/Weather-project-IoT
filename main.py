@@ -7,6 +7,7 @@ from simple import MQTTClient
 import machine
 from variables import Adafruit_username
 from variables import Adafruit_password
+import json
 
 #Default MQTT_BROKER to connect to
 Client_ID = ubinascii.hexlify(machine.unique_id())
@@ -46,14 +47,20 @@ def main():
             mqttClient.check_msg()
             global last_publish
             if(time.time() - last_publish) >= publish_interval:
-                 mqttClient.publish(Publish_topic, str(sensor.humidity).encode())
-                 mqttClient.publish(Publish_topic2, str(sensor.temperature).encode())
-                 last_publish = time.time()
-                 print("Sent stuff...")
-                 if(int(sensor.temperature) >= 25):
-                      print("Temperature reached 25°C!")
-                      mqttClient.publish(Threshhold_topic, str("thresh hold has been reached 25 degrees").encode())
-                 time.sleep(1)
+               dataHum = {
+                "humidity": sensor.humidity
+               }
+               dataTemp = {
+                "temperature": sensor.temperature,
+               }
+               payloadHum = json.dumps(dataHum)
+               payloadTemp = json.dumps(dataTemp)
+               mqttClient.publish(Publish_topic, payloadHum.encode())
+               mqttClient.publish(Publish_topic2, payloadTemp.encode())
+               if(int(sensor.temperature) >= 25):
+                    print("Temperature reached 25°C!")
+                    mqttClient.publish(Threshhold_topic, str("thresh hold has been reached 25 degrees").encode())
+               time.sleep(1)
 
 if __name__ == "__main__":
      while True:
