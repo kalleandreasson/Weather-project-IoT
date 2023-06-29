@@ -21,3 +21,5 @@ I chose Visual studio code (VSC) as my IDE, I tried thonny but it was not as goo
 
 Pretend that the Raspberry is a pi pico w and the sensor is a DHT11 sensor
 ![IoT diagram](./Image/circuit-diagram.PNG)
+
+I'm using Adafruit which is a free cloud service, I upload all the data there and print out graphs and values for the temperature and the humidity. I chose Adafruit because one of my teachers had a really good tutorial on it and it felt like the easiest one since i dont have that much experience with either IoT or micropython. I'm happy that i chose Adafruit because its a easy to use platform and there's a lot of different things i can do like for an example i could toggle the led lamp on my rasbperry. And set up a dashboard with more functionalty
