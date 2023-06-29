@@ -36,3 +36,14 @@ How i connect to my wifi (see code snippet above)
 
 ![main](./Image/main.PNG)
 The main function of my code that upload all the values to adafruit as json to two different feeds, on efor temperature and one for humidity. And i also have a tresh hold for 25 degrees and if that is reached i upload an event to a different feed. For my libraries i just downloaded the python files directly to my repository and that would be the dht and smiple files
+
+## Transmitting the data
+
+The data is sent once every other second, I used wifi as my wireless protocol and MQTT as my transport protocol. With wifi the range is limited but I didnt plan to move the device around i will just have it outside on my coffee table. Either have the devicde connected to a power bank or a power outlet and both works fine if you ask me.
+
+## Presenting the data
+![data](./Image/dashboard.PNG)
+The data is uploaded to feeds on adafruit and visualized with graphs and all the data in a feed is saved for 30 days. I dont have a trigger for when the temperature is above 25 degrees and have reached the tresh hold, however if someone wants to continue the development of my project they can implement that since an event is uploaded to adafruit once the tresh hold has been reached.
+
+This is how my project looks like in real life, I'm happy how my project turned out and it was fun to work with
+![data](./Image/IMG_1815.jpg)
