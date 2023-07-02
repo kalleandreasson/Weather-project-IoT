@@ -45,5 +45,5 @@ The data is sent once every other second, I used wifi as my wireless protocol an
 ![data](./Image/dashboard.PNG)
 The data is uploaded to feeds on adafruit and visualized with graphs and all the data in a feed is saved for 30 days. I dont have a trigger for when the temperature is above 25 degrees and have reached the tresh hold, however if someone wants to continue the development of my project they can implement that since an event is uploaded to adafruit once the tresh hold has been reached.
 
-This is how my project looks like in real life, I'm happy how my project turned out and it was fun to work with
+This is how my project looks like in real life, I'm happy how my project turned out and it was fun to work with. If I would have had more time i would have done something with the tresh hold, perhaps implement so that you get a notification on your mobile phone once the tresh hold has been reached. But I had some rest assignments in other classes that I needed to work on as well.
 ![data](./Image/IMG_1815.jpg)
