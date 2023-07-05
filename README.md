@@ -21,6 +21,8 @@ The raspberry is the mind of the whole setup, it's a micro computer. The raspber
 
 I chose Visual studio code (VSC) as my IDE, I tried thonny but it was not as good as VSC. The code is uploaded to this repository and to my raspberry. I used the extension pico-w-go to upload code to my raspberry and configure the project. In the pico-w-go extension there is an option to upload the code if your raspberry is connected to your PC. If the raspberry is connected and VSC does not notice it you can chose the connect option and then it should reconnect and Visual studio code should be able to see that its connected. You have to download the corresponding UF2 file. If you hold down the boot button on your raspberry and open the provided index file you can see a bunch of UF2 files that are free to download. For my project i also had to download the dht.py and simple.py files. Feel free to downlaod them directly from my repository if you are planning on doing something similar to my project
 
+Link to raspberry website to find UF2 files: https://www.raspberrypi.com/products/raspberry-pi-pico/
+
 ## Putting everything together
 Pretend that the Raspberry is a pi pico w and the sensor is a DHT11 sensor
 ![IoT diagram](./Image/circuit-diagram.PNG)
@@ -47,5 +49,6 @@ The data is sent once every other second, I used wifi as my wireless protocol an
 ![data](./Image/dashboard.PNG)
 The data is uploaded to feeds on adafruit and visualized with graphs and all the data in a feed is saved for 30 days. I dont have a trigger for when the temperature is above 25 degrees and have reached the tresh hold, however if someone wants to continue the development of my project they can implement that since an event is uploaded to adafruit once the tresh hold has been reached.
 
+## Finalizing the design
 This is how my project looks like in real life, I'm happy how my project turned out and it was fun to work with. If I would have had more time i would have done something with the tresh hold, perhaps implement so that you get a notification on your mobile phone once the tresh hold has been reached. But I had some rest assignments in other classes that I needed to work on as well.
 ![data](./Image/IMG_1815.jpg)
